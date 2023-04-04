@@ -1,4 +1,4 @@
-﻿program mas;
+﻿program mass;
 
 var
   mas: array[1..5] of integer = (6000, 5000, 7000, 15000, 3000);

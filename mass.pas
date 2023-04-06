@@ -2,18 +2,18 @@
 
 var
   mas: array[1..5] of integer = (6000, 5000, 7000, 15000, 3000);
-    s: integer;
+    s: real;
     i: integer;
-    v: integer;
+    v: real;
 
 begin
   writeln('Расчет стоимости материала');
   writeln(' ');
-  writeln('1 - газобетон');
-  writeln('2 - полистирол');
-  writeln('3 - кирпич');
-  writeln('4 - брус');
-  writeln('5 - пескоблок');
+  writeln('1 - газобетон цена за 1м3 - 6000 руб');
+  writeln('2 - полистирол цена за 1м3 - 5000 руб');
+  writeln('3 - кирпич цена за 1 м3 - 7000 руб');
+  writeln('4 - брус цена за 1 м3 - 15000 руб');
+  writeln('5 - пескоблок цена за 1м3 - 3000 руб');
   writeln(' ');
   writeln('Выберите материал');
   writeln(' ');
@@ -24,6 +24,6 @@ begin
   readln (v);
   writeln(' ');
   s:=v*mas[i];
-  writeln('Стоимость материала ', s);
+  writeln('Стоимость материала ', s, ' руб ');
 
 end. 

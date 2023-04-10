@@ -18,12 +18,48 @@ begin
   writeln('Выберите материал');
   writeln(' ');
   readln(i);
+  case i of
+    1: begin
+        writeln ('');
+        writeln ('Газoбетон');
+       end;
+    2: begin
+        writeln ('');
+        writeln ('Полистирол');
+       end;
+    3: begin
+        writeln ('');
+        writeln ('Кирпич');
+      end;
+    4: begin
+        writeln ('');
+        writeln ('Брус');
+       end;
+    5: begin
+         writeln ('');
+         writeln ('Пескоблок')
+       end;
+    else
+      writeln ('');
+      writeln('Неверно введен номер материала');
+  end;
   writeln('');
   writeln('Ведите объем');
   writeln(' '); 
   readln (v);
   writeln(' ');
   s:=v*mas[i];
-  writeln('Стоимость материала ', s:10:2, ' руб ');
+  if s < 0 then
+  begin
+    writeln ('');
+    writeln ('Введите корректный объем')
+    end;
+     writeln ('');
+     writeln('Ведите объем');
+     writeln('');
+     readln (v);
+     writeln('');
+     s:=v*mas[i];
+     writeln ('Стоимость материала ', s:10:2, ' руб '); 
  
 end. 

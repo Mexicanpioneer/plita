@@ -52,7 +52,7 @@ begin
   if s < 0 then
   begin
     writeln ('');
-    writeln ('Введите корректный объем')
+    writeln ('Введите корректный объем');
     end;
      writeln ('');
      writeln('Ведите объем');
@@ -60,6 +60,13 @@ begin
      readln (v);
      writeln('');
      s:=v*mas[i];
+     if s<0 then
+     begin
+     writeln ('');
+     writeln ('Ошибка');
+     exit
+     end;
      writeln ('Стоимость материала ', s:10:2, ' руб '); 
  
 end. 
+ 
